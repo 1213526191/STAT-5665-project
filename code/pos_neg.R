@@ -93,4 +93,3 @@ write_csv(result, filename)
 # result[which(result$word %in% "and"),]
 
 
-
