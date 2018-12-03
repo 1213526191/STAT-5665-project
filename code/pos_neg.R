@@ -4,7 +4,7 @@ library(Matrix)
 library(topicmodels)
 library(glmnet) 
 
-data_ori = read_csv("../../data/random100000.csv")
+data_ori = read_csv("../data/random100000.csv")
 
 data_df = data_frame(line = 1:nrow(data_ori),
                      text = data_ori$text, 
@@ -91,5 +91,6 @@ write_csv(result, filename)
 
 # data_tidy3[which(data_tidy3$word %in% "refund"),][2:6]/mycount
 # result[which(result$word %in% "and"),]
+
 
 
